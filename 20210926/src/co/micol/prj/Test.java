@@ -4,33 +4,21 @@ public class Test {
 	private int n;
 	private int m;
 	
-	public int getN() {
-		return n;
-	}
-
-	public void setN(int n) {
+	public Test(int n, int m) {
 		this.n = n;
-	}
-
-	public int getM() {
-		return m;
-	}
-
-	public void setM(int m) {
 		this.m = m;
 	}
 	
 	private void getSum() {
 		int sum = 0;
-		for(int i =n; i <= m ; i++) {
+		for(int i = n; i<=m; i++) {
 			sum = sum + i;
 		}
-		System.out.println(n + "부터 " + m + "까지 의 합 = " + sum);
+		System.out.println(n + "에서 " + m + "까지의 더한값 = " + sum );
 	}
 	
 	public void run() {
 		getSum();
 	}
-	
 	
 }
